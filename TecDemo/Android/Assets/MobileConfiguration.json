@@ -1,0 +1,8 @@
+{
+	"GoogleAnalytics":  {
+		"IsEnabled":  true,
+		"AppName":  "Currency Converter",
+		"AppVersion": "1.0",
+		"TrackingId":  "UA-51733180-1"
+	}
+}

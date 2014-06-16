@@ -1,0 +1,843 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FBF1D9C2-E177-4CB4-B21C-51D9E7FBFE49}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>TecDemo.TouchUniversal</RootNamespace>
+    <IPhoneResourcePrefix>Resources;Resources/Flags</IPhoneResourcePrefix>
+    <AssemblyName>TecDemoTouchUniversal</AssemblyName>
+    <NuGetPackageImportStamp>cce137ea</NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchDebug>True</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchSdkVersion>7.1</MtouchSdkVersion>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchProfiling>False</MtouchProfiling>
+    <MtouchExtraArgs />
+    <MtouchFastDev>False</MtouchFastDev>
+    <MtouchEnableGenericValueTypeSharing>True</MtouchEnableGenericValueTypeSharing>
+    <MtouchArch>Default, ARMv7</MtouchArch>
+    <MtouchUseLlvm>False</MtouchUseLlvm>
+    <MtouchUseThumb>False</MtouchUseThumb>
+    <MtouchUseSGen>False</MtouchUseSGen>
+    <MtouchUseRefCounting>False</MtouchUseRefCounting>
+    <MtouchOptimizePNGs>True</MtouchOptimizePNGs>
+    <MtouchI18n />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchSdkVersion>7.1</MtouchSdkVersion>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchDebug>False</MtouchDebug>
+    <MtouchProfiling>False</MtouchProfiling>
+    <MtouchExtraArgs />
+    <MtouchFastDev>False</MtouchFastDev>
+    <MtouchEnableGenericValueTypeSharing>True</MtouchEnableGenericValueTypeSharing>
+    <MtouchArch>Default, ARMv7</MtouchArch>
+    <MtouchUseLlvm>True</MtouchUseLlvm>
+    <MtouchUseThumb>False</MtouchUseThumb>
+    <MtouchUseSGen>False</MtouchUseSGen>
+    <MtouchUseRefCounting>False</MtouchUseRefCounting>
+    <MtouchOptimizePNGs>True</MtouchOptimizePNGs>
+    <MtouchI18n />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <BuildIpa>True</BuildIpa>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>TecDemo.TouchUniversal.Application</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+    <MtouchSdkVersion>Default</MtouchSdkVersion>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchDebug>True</MtouchDebug>
+    <MtouchProfiling>False</MtouchProfiling>
+    <MtouchExtraArgs />
+    <MtouchFastDev>False</MtouchFastDev>
+    <MtouchEnableGenericValueTypeSharing>True</MtouchEnableGenericValueTypeSharing>
+    <MtouchArch>Default, ARMv7</MtouchArch>
+    <MtouchUseLlvm>False</MtouchUseLlvm>
+    <MtouchUseThumb>False</MtouchUseThumb>
+    <MtouchUseSGen>False</MtouchUseSGen>
+    <MtouchUseRefCounting>False</MtouchUseRefCounting>
+    <MtouchOptimizePNGs>True</MtouchOptimizePNGs>
+    <MtouchI18n />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Ad-Hoc|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Ad-Hoc\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'AppStore|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\AppStore\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Common\ViewLocator.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <BundleResource Include="Resources\Default%402x.png" />
+    <BundleResource Include="Resources\Default-568h%402x.png" />
+    <BundleResource Include="Resources\Default-Landscape%402x.png" />
+    <BundleResource Include="Resources\Default-Landscape.png" />
+    <BundleResource Include="Resources\Default-Portrait%402x.png" />
+    <BundleResource Include="Resources\Default-Portrait.png" />
+    <BundleResource Include="Resources\Default.png" />
+    <BundleResource Include="Resources\Icon%402x.png" />
+    <BundleResource Include="Resources\Icon-60%402x.png" />
+    <BundleResource Include="Resources\Icon-72%402x.png" />
+    <BundleResource Include="Resources\Icon-72.png" />
+    <BundleResource Include="Resources\Icon-76%402x.png" />
+    <BundleResource Include="Resources\Icon-76.png" />
+    <BundleResource Include="Resources\Icon-Small-40%402x.png" />
+    <BundleResource Include="Resources\Icon-Small-40.png" />
+    <BundleResource Include="Resources\Icon-Small-50%402x.png" />
+    <BundleResource Include="Resources\Icon-Small-50.png" />
+    <BundleResource Include="Resources\Icon-Small.png" />
+    <BundleResource Include="Resources\Icon.png" />
+    <Content Include="Data\MobileConfiguration.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <BundleResource Include="Resources\Flags\hk.png" />
+    <None Include="Info.plist" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CurrencyConverter.Contracts\CurrencyConverter.Contracts.csproj">
+      <Project>{8A189DDF-5CB0-4F70-A23C-2072182F03B7}</Project>
+      <Name>CurrencyConverter.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CurrencyConverter.Services\CurrencyConverter.Services.csproj">
+      <Project>{47ED300A-0C61-431C-AB37-0046C5E867A1}</Project>
+      <Name>CurrencyConverter.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mobile.Contracts\Mobile.Contracts.csproj">
+      <Project>{121784e0-c4f7-4b51-92e1-25c26f084d24}</Project>
+      <Name>Mobile.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mobile.Touch\Mobile.Touch.csproj">
+      <Project>{735e7f35-9e4c-47d1-9516-6af7202be6ad}</Project>
+      <Name>Mobile.Touch</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mobile\Mobile.csproj">
+      <Project>{b2966b21-4ae9-4d58-97d9-176d160f8314}</Project>
+      <Name>Mobile</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ViewModels\ViewModels.csproj">
+      <Project>{1176fbfa-1e52-4dbd-9cf0-9442f43b949a}</Project>
+      <Name>ViewModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Views\Views.csproj">
+      <Project>{67f9d3a8-f71e-4428-913f-c37ae82cdb24}</Project>
+      <Name>Views</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Autofac, Version=3.4.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.3.4.1\lib\portable-win+net40+sl50+wp8\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleAnalytics.Core.Xamarin, Version=1.2.8.13980, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\GoogleAnalyticsXamarin\GoogleAnalytics.Core.Xamarin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Extensions">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.22\lib\monotouch\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=4.2.22.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.22\lib\monotouch\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+    <Reference Include="Xamarin.Forms.Core">
+      <HintPath>..\packages\Xamarin.Forms.1.1.0.6201\lib\MonoTouch10\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform.iOS">
+      <HintPath>..\packages\Xamarin.Forms.1.1.0.6201\lib\MonoTouch10\Xamarin.Forms.Platform.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Xamarin.Forms.1.1.0.6201\lib\MonoTouch10\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon-Small%402x.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ITunesArtwork Include="iTunesArtwork" />
+    <ITunesArtwork Include="iTunesArtwork%402x" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\ad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\ae.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\af.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\ag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\al.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\am.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\ao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\ar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\at.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\au.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\az.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\ba.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\bb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\bd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\be.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\bf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\bh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\bi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\bj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\bn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\bo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\br.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\bs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\bt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\bw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\by.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\bz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\ca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\cd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\cf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\cg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\ch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\ci.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\cl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\cm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\cn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\co.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\cr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\cu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\cv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\cy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\cz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\de.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\dj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\dk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\dm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\do.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\dz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\ec.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\ee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\eg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\eh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\er.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\es.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\et.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\eu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\fi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\fj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\fm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\fr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\ga.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\gb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\gd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\ge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\gh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\gm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\gn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\gq.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\gr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\gt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\gw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\gy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\hn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\hr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\ht.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\hu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\id.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\ie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\il.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\in.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\iq.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\is.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\it.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\jm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\jo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\jp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\ke.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\kg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\kh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\ki.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\km.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\kn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\kp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\kr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\ks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\kw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\kz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\la.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\lb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\lc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\li.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\lk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\lr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\ls.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\lt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\lu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\lv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\ly.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\ma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\mc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\md.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\me.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\mg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\mh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\mk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\ml.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\mm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\mn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\mr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\mt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\mu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\mv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\mw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\mx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\my.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\mz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\na.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\ne.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\ng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\ni.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\nl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\no.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\np.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\nr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\nz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\om.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\pa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\pe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\pg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\ph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\pk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\pl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\pt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\pw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\py.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\qa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\ro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\rs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\rw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\sa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\sb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\sc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\sd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\se.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\sg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\si.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\sk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\sl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\sn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\so.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\sr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\st.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\sv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\sy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\sz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\td.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\tg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\th.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\tj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\tl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\tm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\tn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\to.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\tr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\tt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\tv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\tw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\tz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\ua.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\ug.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\us.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\uy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\uz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\va.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\vc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\ve.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\vn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\vu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\ws.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\ye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\za.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\zm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flags\zw.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+  <Import Project="..\packages\Xamarin.Forms.1.1.0.6201\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.1.1.0.6201\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10\Xamarin.Forms.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Xamarin.Forms.1.1.0.6201\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Forms.1.1.0.6201\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10\Xamarin.Forms.targets'))" />
+  </Target>
+</Project>

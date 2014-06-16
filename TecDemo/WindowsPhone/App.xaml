@@ -1,0 +1,23 @@
+﻿<platform:WindowsPhoneApplication
+    x:Class="TecDemo.WindowsPhone.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:windowsPhone="clr-namespace:TecDemo.WindowsPhone"
+    xmlns:common="clr-namespace:TecDemo.WindowsPhone.Common"
+    xmlns:platform="clr-namespace:TecDemo.Mobile.WindowsPhone.Platform;assembly=TecDemo.Mobile.WindowsPhone">
+
+    <!--Application Resources-->
+    <Application.Resources>
+		<windowsPhone:LocalizedStrings x:Key="LocalizedStrings"/>
+	</Application.Resources>
+
+    <Application.ApplicationLifetimeObjects>
+        <!--Required object that handles lifetime events for the application-->
+        <shell:PhoneApplicationService
+            Launching="Application_Launching" Closing="Application_Closing"
+            Activated="Application_Activated" Deactivated="Application_Deactivated"/>
+    </Application.ApplicationLifetimeObjects>
+
+</platform:WindowsPhoneApplication>
