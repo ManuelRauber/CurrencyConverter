@@ -13,7 +13,7 @@ Big versions of screenshots can be found [here](https://github.com/ManuelRauber/
 ![Windows Phone](https://raw.githubusercontent.com/ManuelRauber/CurrencyConverter/master/Resources/Screenshots/small/WP03.png)
 ![Windows Phone](https://raw.githubusercontent.com/ManuelRauber/CurrencyConverter/master/Resources/Screenshots/small/WP04.png)
 ![Windows Phone](https://raw.githubusercontent.com/ManuelRauber/CurrencyConverter/master/Resources/Screenshots/small/WP05.png)
-small/
+
 ### iOS
 ![iOS](https://raw.githubusercontent.com/ManuelRauber/CurrencyConverter/master/Resources/Screenshots/small/iOS01.png)
 ![iOS](https://raw.githubusercontent.com/ManuelRauber/CurrencyConverter/master/Resources/Screenshots/small/iOS02.png)
