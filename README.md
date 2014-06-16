@@ -3,7 +3,7 @@ A Xamarin.Forms TechDemo
 
 For more information please take a look at my blog: http://www.manuel-rauber.com/post/2014/06/14/First-impressions-of-XamarinForms 
 
-![Apps](https://raw.githubusercontent.com/ManuelRauber/CurrencyConverter/master/Resources/RunningApps_small.JPG)
+![Apps](https://raw.githubusercontent.com/ManuelRauber/CurrencyConverter/master/Resources/RunningApps_small.jpg)
 (I used the iPhone for making the screenshot)
 
 ## Screenshots
