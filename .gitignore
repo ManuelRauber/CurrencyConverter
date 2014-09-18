@@ -319,5 +319,4 @@ sympy-plots-for-*.tex/
 # morewrites
 *.mw
 
-TecDemo/packages/
 *.aex
